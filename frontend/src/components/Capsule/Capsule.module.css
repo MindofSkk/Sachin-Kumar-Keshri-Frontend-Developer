@@ -1,0 +1,92 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* border: 1px solid black; */
+  gap: 20px;
+  width: 95%;
+  margin: auto;
+}
+.box > div {
+  border: 3px solid wheat;
+  border-radius: 2px;
+  background-color: black;
+}
+.filters {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.filters > select {
+  background-color: #2a2b2c;
+  color: white;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid greenyellow;
+}
+select:hover {
+  background-color: black;
+  font-weight: bolder;
+  border: 2px solid orange;
+}
+input {
+  background-color: #2a2b2c;
+  color: white;
+  border: 1px solid greenyellow;
+  font-size: 18px;
+  border-radius: 5px;
+}
+body {
+  background-color: #2a2b2c;
+  color: white;
+}
+/* medium */
+@media all and (min-width: 381px) and (max-width: 700px) {
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid black; */
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+  }
+  .filters {
+    display: flex;
+
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .filters > select {
+    background-color: #2a2b2c;
+    color: white;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid greenyellow;
+  }
+}
+
+/* small */
+@media all and (min-width: 50px) and (max-width: 380px) {
+  .box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* border: 1px solid black; */
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+  }
+  .filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
